@@ -2,3 +2,10 @@ html{
 margin:0px auto;
 width:1000px;
 }
+.inline{
+    float: left;
+    padding-right:300px
+}
+#osnovatel{
+    text-align:center;
+}
