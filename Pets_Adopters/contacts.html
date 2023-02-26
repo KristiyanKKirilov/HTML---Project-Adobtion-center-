@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="BG">
+<head>
+<meta charset="UTF-8">
+<title>Pets Adopters</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+		$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+
+
+		});
+/**/
+function writeimg(txt)
+{
+document.getElementById("img").src=txt
+document.getElementById("example2").href=txt
+}
+	</script>
+</head>
+<body>
+	
+	<form>
+		<fieldset>
+		<legend>Контактна форма</legend>
+			Име: <input type="text"><br><br>
+			Фамилия:<input type="text"><br><br>
+			Имейл:<input type="email"><br><br>
+			Поради каква причина подавате формата: <input type="checkbox">осиновяване <input type="checkbox">предаване на животно <input type="checkbox">друга<br><br>
+			При получаване на формуляра ще се свържем с Вас за повече подробности чрез Вашия имейл.
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	<br><br>
+	<div style="width:620px; background-color:bisque"> Можете да посетите нашата фейсбук страница като натиснете иконката на фейсбук. <a href='https://www.facebook.com/'><img style=" float:right " src='images/facebook.png' width=40></a><br><br>Телефон за връзка: 088512446<br><br>Имейл: osinoviteli@gmail.com</div>
+</body>
+</html>

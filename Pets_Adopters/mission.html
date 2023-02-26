@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="BG">
+<head>
+<meta charset="UTF-8">
+<title>Pets Adopters</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+		$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+
+
+		});
+/**/
+function writeimg(txt)
+{
+document.getElementById("img").src=txt
+document.getElementById("example2").href=txt
+}
+	</script>
+</head>
+<body>
+<h1>Нашата цел</h1>
+<div><p>Целта на нашата организация е да помагаме на беззащитни животни,които да бъдат осиновени от хора и/или организации като зоологичекси градини. Тук можете да срещнете всякакви видове - от риби през селскостопански животни до диви животни. Към момента партнираме с не малко зоопаркове и дори национални паркове като "Централен Балкан" и "Пирин".</p>
+<p>Също така, ако имате желание, може да предадете на нашата организация беззащитно животно, на което му е необходимо дом. Ние с радост ще го приемем. В такъв случай можете да се обърнете към нас чрез секцията "Контакти", която се намира в навигационното табло.</p>
+<p>Важно уточнение!!! Ние не допускаме за осиновяване животни, включени в Червената книга на България. Ако попаднем на такъв вид, го предаваме директно в някой резерват/ национален парк и др.</p>
+</div>
+<br><br><br><br>
+<div>
+	<h2>Съоснователи:</h2>
+	<div class="inline"><img src="images/bruce.jpg"><br>
+		<p id="osnovatel">Ивайло Георгиев</p></div>
+	<div><img src="images/nicholas.jpg" width="332"><br>
+		<p id="osnovatel">Кристиян Кирилов</p></div>
+	
+</div>
+</body>
+</html>
